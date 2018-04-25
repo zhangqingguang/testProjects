@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <meta charset="utf-8"/>
+    <style >
+        tr {
+            display: inline-block;
+            float: left;
+        }
+        td {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        TODO make a nice looking pure client qrcode generator
+        even allow download of the image
+    </p>
+    <div id="output"></div>
+    <script src="Scripts/jquery-1.10.2.js"></script>
+    <script src="Content/js/qrcode.js"></script>
+    <script src="Content/js/jquery.qrcode.js"></script>
+    <script type="text/javascript">
+$(function(){
+    $('#output').qrcode("https://devserver01:8009/website/index?v=002829#xingc");
+})
+    </script>
+</body>
+</html>

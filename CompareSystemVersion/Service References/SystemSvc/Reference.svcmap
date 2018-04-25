@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="90cdf255-d590-4cd6-a39f-ce2e6cc01bb1" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:8012/Service/SSOSystem.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="SSOSystem.disco" MetadataType="Disco" ID="15ddbe1e-75f6-4fc7-8891-fa5a02849ba3" SourceId="1" SourceUrl="http://localhost:8012/Service/SSOSystem.svc?disco" />
+    <MetadataFile FileName="SSOSystem.xsd" MetadataType="Schema" ID="a328f7dc-1a6b-4144-9afa-ffbebdc8fa44" SourceId="1" SourceUrl="http://localhost:8012/Service/SSOSystem.svc?xsd=xsd1" />
+    <MetadataFile FileName="SSOSystem1.xsd" MetadataType="Schema" ID="a1512959-2cd9-4dd1-a267-7c5f35b39c38" SourceId="1" SourceUrl="http://localhost:8012/Service/SSOSystem.svc?xsd=xsd2" />
+    <MetadataFile FileName="SSOSystem2.xsd" MetadataType="Schema" ID="a55edf8a-34c4-490b-8c91-59a7e4886acf" SourceId="1" SourceUrl="http://localhost:8012/Service/SSOSystem.svc?xsd=xsd0" />
+    <MetadataFile FileName="SSOSystem.wsdl" MetadataType="Wsdl" ID="915102de-bcc7-4552-88ef-69d1b7eff5e2" SourceId="1" SourceUrl="http://localhost:8012/Service/SSOSystem.svc?wsdl" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

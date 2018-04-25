@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <meta charset="utf-8" />
+    <script src="Scripts/vue.min.js"></script>
+    <style>
+        .divider {
+            border-top: 1px solid gray;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        {{*message}}<br/>
+        <input v-model="message"/><br/>
+        <input v-model="newTodo" v-on:keyup="addTodo">
+        <ul>
+            <li v-for="todo in todos">
+                <span>{{ todo.text }}</span>
+                <button v-on:click="removeTodo($index)">X</button>
+            </li>
+        </ul>
+        <ul>
+            <li v-for="todo in todos">
+                {{ todo.text }}
+            </li>
+        </ul>
+        <ul>
+            <template v-for="todo in todos">
+                <li>{{todo.text}}</li>
+                <li class="divider"></li>
+            </template>
+        </ul>
+        <button v-on:click="reverseMessage">Reverse Message</button>
+    </div>
+
+<script type="text/javascript">
+    var vue = new Vue({
+        el: "#app",
+        data: {
+            message: "Hello World!!!",
+            newTodo: '',
+            todos: [
+                { text: 'Learn JavaScript' },
+                { text: 'Learn Vue.js' },
+                { text: 'Build Something Awesome' }
+            ]
+        },
+        methods: {
+            reverseMessage: function() {
+                this.message = this.message.split('').reverse().join('');
+                this.todos = this.todos.reverse();
+            },
+            addTodo: function() {
+                var text = this.newTodo.trim();
+                if (text) {
+                    this.todos.push({ text: text });
+                    this.newTodo = '';
+                }
+            },
+            removeTodo: function(index) {
+                this.todos.splice(index, 1);
+            },
+            capitalize: function() {
+                this.message = this.message;
+            }
+        }
+    });
+
+</script>
+
+
+<form id="demo">
+    <select>
+        <optgroup label="A">
+            <option value="a">a</option>
+            <option value="b">b</option>
+        </optgroup>
+        <optgroup label="B">
+            <option value="c">c</option>
+            <option value="d">d</option>
+        </optgroup>
+    </select>
+    <!-- text -->
+    <p>
+        <input type="text" v-model="msg">
+        {{msg}}
+    </p>
+    <!-- checkbox -->
+    <p>
+        <input type="checkbox" v-model="checked">
+        {{checked ? "yes" : "no"}}
+    </p>
+    <!-- radio buttons -->
+    <p>
+        <input type="radio" name="picked" value="one" v-model="picked">
+        <input type="radio" name="picked" value="two" v-model="picked">
+        {{picked}}
+    </p>
+    <!-- select -->
+    <p>
+        <select v-model="selected">
+            <option>one</option>
+            <option>two</option>
+        </select>
+        {{selected}}
+    </p>
+    <!-- multiple select -->
+    <p>
+        <select v-model="multiSelect" multiple>
+            <option>one</option>
+            <option>two</option>
+            <option>three</option>
+        </select>
+        {{multiSelect}}
+    </p>
+    <p><pre>data: {{$data | json 2}}</pre></p>
+</form>
+<script>
+    new Vue({
+        el: '#demo',
+        data: {
+            msg: 'hi!',
+            checked: true,
+            picked: 'one',
+            selected: 'two',
+            multiSelect: ['one', 'three']
+        }
+    })
+</script>
+</body>
+</html>

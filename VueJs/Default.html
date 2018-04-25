@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="en" class="no-js">
+ <!--<![endif]-->
+<!-- BEGIN HEAD -->
+
+<head>
+
+    <meta charset="utf-8" />
+
+    <title>Metronic | Admin Dashboard Template</title>
+
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link href="https://esb-dev.itgoldenbridge.com/content/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://esb-dev.itgoldenbridge.com/content/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://esb-dev.itgoldenbridge.com/content/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://esb-dev.itgoldenbridge.com/content/css/style-metro.css" rel="stylesheet" type="text/css" />
+    <link href="https://esb-dev.itgoldenbridge.com/content/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="https://esb-dev.itgoldenbridge.com/content/css/style-responsive.css" rel="stylesheet" type="text/css" />
+    <link href="https://esb-dev.itgoldenbridge.com/content/css/default.css" rel="stylesheet" type="text/css" id="style_color" />
+    <link href="https://esb-dev.itgoldenbridge.com/content/css/uniform.default.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="https://esb-dev.itgoldenbridge.com/content/image/favicon.ico" />
+
+</head>
+<body class="page-header-fixed">
+    <div class="header navbar navbar-inverse navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container-fluid">
+                <a class="brand" href="index.html">
+                    <img src="https://esb-dev.itgoldenbridge.com/content/image/logo.png" alt="logo" style="height: 20px" />
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="page-container">
+        <div class="page-sidebar nav-collapse collapse">
+            <ul class="page-sidebar-menu">
+                <li>
+                    <div class="sidebar-toggler hidden-phone"></div>
+                </li>
+                <li class="start active ">
+                    <a href="index.html">
+                        <i class="icon-home"></i>
+                        <span class="title">首页</span>
+                        <span class="selected"></span>
+                    </a>
+                </li>
+                <li class="">
+                    <a href="javascript:;">
+                        <i class="icon-cogs"></i>
+                        <span class="title">Layouts</span>
+                        <span class="arrow "></span>
+                    </a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="layout_horizontal_sidebar_menu.html">
+                                页面1
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="page-content">
+            <div class="container-fluid">
+                <div class="row-fluid">
+                    内容页
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-inner">
+            2013 &copy; Metronic by keenthemes.Collect from <a href="http://www.cssmoban.com/" title="网站模板" target="_blank">网站模板</a> - More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a>
+        </div>
+        <div class="footer-tools">
+            <span class="go-top">
+                <i class="icon-angle-up"></i>
+            </span>
+        </div>
+    </div>
+
+<script src="https://esb-dev.itgoldenbridge.com/content/js/jquery-1.10.1.min.js" type="text/javascript"></script>
+    <script src="https://esb-dev.itgoldenbridge.com/content/js/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+    <script src="https://esb-dev.itgoldenbridge.com/content/js/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script>
+    <script src="https://esb-dev.itgoldenbridge.com/content/js/bootstrap.min.js" type="text/javascript"></script>
+    <!--[if lt IE 9]>
+    <script src="https://esb-dev.itgoldenbridge.com/content/js/excanvas.min.js"></script>
+    <script src="https://esb-dev.itgoldenbridge.com/content/js/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://esb-dev.itgoldenbridge.com/content/js/app.js" type="text/javascript"></script>
+    <script>
+		jQuery(document).ready(function() {
+		    App.init();
+		    initMenu();
+
+
+		});
+        function initMenu() {
+            $.get("/app/menu", function (menus) {
+                console.log(menus);
+            },"json");
+        }
+    </script>
+</body>
+</html>

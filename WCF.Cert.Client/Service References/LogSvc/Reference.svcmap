@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="6d338a4d-410c-4124-9d88-917f0688df1e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://crm-dev.itcgb.cn/Log/Logger.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Logger3.xsd" MetadataType="Schema" ID="1f9d5b97-158d-4369-b94a-9582618e47d7" SourceId="1" SourceUrl="http://crm-dev.itcgb.cn/Log/Logger.svc?xsd=xsd0" />
+    <MetadataFile FileName="Logger.disco" MetadataType="Disco" ID="57916f08-1ea9-4ddf-91db-efffd8a03795" SourceId="1" SourceUrl="http://crm-dev.itcgb.cn/Log/Logger.svc?disco" />
+    <MetadataFile FileName="Logger1.wsdl" MetadataType="Wsdl" ID="9d9b5aae-50ca-4352-9abb-c6334421f896" SourceId="1" SourceUrl="http://crm-dev.itcgb.cn/Log/Logger.svc?wsdl" />
+    <MetadataFile FileName="Logger31.xsd" MetadataType="Schema" ID="9ca07f1f-8bf9-4086-86b3-a050e9f232f9" SourceId="1" SourceUrl="http://crm-dev.itcgb.cn/Log/Logger.svc?xsd=xsd2" />
+    <MetadataFile FileName="Logger32.xsd" MetadataType="Schema" ID="e5bcd780-2b86-46bb-8253-580eb19efce6" SourceId="1" SourceUrl="http://crm-dev.itcgb.cn/Log/Logger.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

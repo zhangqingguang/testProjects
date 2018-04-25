@@ -1,0 +1,886 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="IntelModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <!--生成过程中发现错误:
+警告 6013: 表/视图“IntelContentLibrary_FTR.dbo.Intel Lead DCG”未定义主键，并且无法推断有效的主键。已排除了此表/视图。若要使用实体，将需要检查您的架构、添加正确的键并取消对实体的注释。
+        <EntityType Name="Intel Lead DCG">
+          <Property Name="No#" Type="nvarchar" MaxLength="255" />
+          <Property Name="Date" Type="nvarchar" MaxLength="255" />
+          <Property Name="CN Title" Type="nvarchar" MaxLength="255" />
+          <Property Name="EN Title" Type="nvarchar" MaxLength="255" />
+          <Property Name="Key_Segement" Type="nvarchar" MaxLength="255" />
+          <Property Name="Other _Segment" Type="nvarchar" MaxLength="255" />
+          <Property Name="Intel Xeon Scalable Processor Related" Type="nvarchar" MaxLength="255" />
+          <Property Name="Resource" Type="nvarchar" MaxLength="255" />
+          <Property Name=" Owner" Type="nvarchar" MaxLength="255" />
+          <Property Name="Audience" Type="nvarchar" MaxLength="255" />
+          <Property Name="Category" Type="nvarchar" MaxLength="255" />
+          <Property Name="Format" Type="nvarchar" MaxLength="255" />
+          <Property Name="Gated Content" Type="nvarchar" MaxLength="255" />
+          <Property Name="Volume" Type="nvarchar" MaxLength="255" />
+          <Property Name="Agency" Type="nvarchar" MaxLength="255" />
+          <Property Name="Stage" Type="nvarchar" MaxLength="255" />
+          <Property Name="Summary" Type="nvarchar" MaxLength="255" />
+          <Property Name="Industry" Type="nvarchar" MaxLength="255" />
+          <Property Name="Industrial Topic" Type="nvarchar" MaxLength="255" />
+          <Property Name="Technical Topic" Type="nvarchar" MaxLength="255" />
+          <Property Name="Workload" Type="nvarchar" MaxLength="255" />
+          <Property Name="Customer" Type="nvarchar" MaxLength="255" />
+          <Property Name="Partner" Type="nvarchar" MaxLength="255" />
+          <Property Name="HW _Product/Tech" Type="nvarchar" MaxLength="255" />
+          <Property Name="SW/Solution _or Other Support" Type="nvarchar" MaxLength="255" />
+          <Property Name="Key Sentence" Type="nvarchar" MaxLength="255" />
+          <Property Name="Intel HQ Website (EN)" Type="nvarchar" MaxLength="255" />
+          <Property Name="Intel CN Website (CN)" Type="nvarchar" MaxLength="255" />
+          <Property Name="AWS URL (CN)" Type="nvarchar(max)" />
+          <Property Name="Comments" Type="nvarchar" MaxLength="255" />
+        </EntityType>-->
+        <!--生成过程中发现错误:
+警告 6013: 表/视图“IntelContentLibrary_FTR.dbo.Intel Lead IOTG”未定义主键，并且无法推断有效的主键。已排除了此表/视图。若要使用实体，将需要检查您的架构、添加正确的键并取消对实体的注释。
+        <EntityType Name="Intel Lead IOTG">
+          <Property Name="No#" Type="nvarchar" MaxLength="255" />
+          <Property Name="Date" Type="nvarchar" MaxLength="255" />
+          <Property Name="CN Title" Type="nvarchar" MaxLength="255" />
+          <Property Name="EN Title" Type="nvarchar" MaxLength="255" />
+          <Property Name="Key_Segement" Type="nvarchar" MaxLength="255" />
+          <Property Name="Hot Topic" Type="nvarchar" MaxLength="255" />
+          <Property Name="Resource" Type="nvarchar" MaxLength="255" />
+          <Property Name=" Owner" Type="nvarchar" MaxLength="255" />
+          <Property Name="Audience" Type="nvarchar" MaxLength="255" />
+          <Property Name="Category" Type="nvarchar" MaxLength="255" />
+          <Property Name="Format" Type="nvarchar" MaxLength="255" />
+          <Property Name="Agency" Type="nvarchar" MaxLength="255" />
+          <Property Name="Stage" Type="nvarchar" MaxLength="255" />
+          <Property Name="Summary" Type="nvarchar" MaxLength="255" />
+          <Property Name="Industry" Type="nvarchar" MaxLength="255" />
+          <Property Name="Industrial Topic" Type="nvarchar" MaxLength="255" />
+          <Property Name="Technical  Topic" Type="nvarchar" MaxLength="255" />
+          <Property Name="Workload" Type="nvarchar" MaxLength="255" />
+          <Property Name="Customer" Type="nvarchar" MaxLength="255" />
+          <Property Name="Partner" Type="nvarchar" MaxLength="255" />
+          <Property Name="HW _Product/Tech" Type="nvarchar" MaxLength="255" />
+          <Property Name="SW/Solution _or Other Support" Type="nvarchar" MaxLength="255" />
+          <Property Name="Key Sentence" Type="nvarchar(max)" />
+          <Property Name="Intel HQ Website (EN)" Type="nvarchar" MaxLength="255" />
+          <Property Name="Intel CN Website (CN)" Type="nvarchar" MaxLength="255" />
+          <Property Name="AWS URL (CN)" Type="nvarchar(max)" />
+          <Property Name="Comments" Type="nvarchar" MaxLength="255" />
+        </EntityType>-->
+        <!--生成过程中发现错误:
+警告 6013: 表/视图“IntelContentLibrary_FTR.dbo.Media Coop DCG”未定义主键，并且无法推断有效的主键。已排除了此表/视图。若要使用实体，将需要检查您的架构、添加正确的键并取消对实体的注释。
+        <EntityType Name="Media Coop DCG">
+          <Property Name="No#" Type="nvarchar" MaxLength="255" />
+          <Property Name="Date" Type="nvarchar" MaxLength="255" />
+          <Property Name="CN Title" Type="nvarchar" MaxLength="255" />
+          <Property Name="Key_Segement" Type="nvarchar" MaxLength="255" />
+          <Property Name="Other _Segment" Type="nvarchar" MaxLength="255" />
+          <Property Name=" Owner" Type="nvarchar" MaxLength="255" />
+          <Property Name="Category" Type="nvarchar" MaxLength="255" />
+          <Property Name="Format" Type="nvarchar" MaxLength="255" />
+          <Property Name="Media" Type="nvarchar" MaxLength="255" />
+          <Property Name="Agency" Type="nvarchar" MaxLength="255" />
+          <Property Name="Summary" Type="nvarchar" MaxLength="255" />
+          <Property Name="Industry" Type="nvarchar" MaxLength="255" />
+          <Property Name="Industrial Topic" Type="nvarchar" MaxLength="255" />
+          <Property Name="Technical  Topic" Type="nvarchar" MaxLength="255" />
+          <Property Name="Workload" Type="nvarchar" MaxLength="255" />
+          <Property Name="Customer" Type="nvarchar" MaxLength="255" />
+          <Property Name="Partner" Type="nvarchar" MaxLength="255" />
+          <Property Name="HW _Product/Tech" Type="nvarchar" MaxLength="255" />
+          <Property Name="SW/Solution _or Other Support" Type="nvarchar" MaxLength="255" />
+          <Property Name="Key Sentence" Type="nvarchar(max)" />
+          <Property Name="Media URLs " Type="nvarchar" MaxLength="255" />
+        </EntityType>-->
+        <!--生成过程中发现错误:
+警告 6013: 表/视图“IntelContentLibrary_FTR.dbo.Social DCG”未定义主键，并且无法推断有效的主键。已排除了此表/视图。若要使用实体，将需要检查您的架构、添加正确的键并取消对实体的注释。
+        <EntityType Name="Social DCG">
+          <Property Name="NO" Type="nvarchar" MaxLength="255" />
+          <Property Name="Time" Type="nvarchar" MaxLength="255" />
+          <Property Name="Industry" Type="nvarchar" MaxLength="255" />
+          <Property Name="Title" Type="nvarchar" MaxLength="255" />
+          <Property Name="Abstract" Type="nvarchar" MaxLength="255" />
+          <Property Name="WeChat  Link" Type="nvarchar" MaxLength="255" />
+        </EntityType>-->
+        <!--生成过程中发现错误:
+警告 6013: 表/视图“IntelContentLibrary_FTR.dbo.Social IOTG”未定义主键，并且无法推断有效的主键。已排除了此表/视图。若要使用实体，将需要检查您的架构、添加正确的键并取消对实体的注释。
+        <EntityType Name="Social IOTG">
+          <Property Name="Time" Type="nvarchar" MaxLength="255" />
+          <Property Name="Industry" Type="nvarchar" MaxLength="255" />
+          <Property Name="Title" Type="nvarchar" MaxLength="255" />
+          <Property Name="Abstract" Type="nvarchar" MaxLength="255" />
+          <Property Name="WeChat  Link" Type="nvarchar" MaxLength="255" />
+        </EntityType>-->
+        <EntityType Name="tCategory">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ContentType" Type="int" Nullable="false" />
+          <Property Name="Code" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="DisplayName" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Sort" Type="int" Nullable="false" />
+          <Property Name="IsAdvanceSearch" Type="bit" Nullable="false" />
+          <Property Name="IsMultiple" Type="bit" Nullable="false" />
+          <Property Name="Position" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tCategoryItem">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CategoryID" Type="int" Nullable="false" />
+          <Property Name="Code" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Sort" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tContent">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Date" Type="date" Nullable="false" />
+          <Property Name="CNTitle" Type="nvarchar" MaxLength="500" />
+          <Property Name="ENTitle" Type="nvarchar" MaxLength="1000" />
+          <Property Name="KeySegment" Type="nvarchar" MaxLength="100" />
+          <Property Name="OtherSegment" Type="nvarchar" MaxLength="100" />
+          <Property Name="PurleyContent" Type="nvarchar" MaxLength="100" />
+          <Property Name="Resource" Type="nvarchar" MaxLength="100" />
+          <Property Name="Owner" Type="nvarchar" MaxLength="100" />
+          <Property Name="Audience" Type="nvarchar" MaxLength="100" />
+          <Property Name="Category" Type="nvarchar" MaxLength="100" />
+          <Property Name="Format" Type="nvarchar" MaxLength="100" />
+          <Property Name="Volume" Type="nvarchar" MaxLength="100" />
+          <Property Name="Agency" Type="nvarchar" MaxLength="100" />
+          <Property Name="Stage" Type="nvarchar" MaxLength="100" />
+          <Property Name="Summary" Type="nvarchar(max)" />
+          <Property Name="Industry" Type="nvarchar" MaxLength="100" />
+          <Property Name="IndustrialTopic" Type="nvarchar" MaxLength="100" />
+          <Property Name="TechnicalTopic" Type="nvarchar" MaxLength="100" />
+          <Property Name="Workload" Type="nvarchar" MaxLength="1000" />
+          <Property Name="Customer" Type="nvarchar" MaxLength="500" />
+          <Property Name="Partner" Type="nvarchar" MaxLength="100" />
+          <Property Name="HWProductTech" Type="nvarchar" MaxLength="1000" />
+          <Property Name="SWSolutionOrOtherSupport" Type="nvarchar" MaxLength="500" />
+          <Property Name="KeySentence" Type="nvarchar(max)" />
+          <Property Name="IntelHQWebsiteEN" Type="nvarchar" MaxLength="2100" />
+          <Property Name="IntelCNWebsite" Type="nvarchar" MaxLength="2100" />
+          <Property Name="AWSURLCN" Type="nvarchar" MaxLength="2100" />
+          <Property Name="IDLIDCN" Type="nvarchar" MaxLength="2100" />
+          <Property Name="Comments" Type="nvarchar(max)" />
+          <Property Name="Media" Type="nvarchar" MaxLength="500" />
+          <Property Name="MediaURLs" Type="nvarchar" MaxLength="2100" />
+          <Property Name="Abstract" Type="nvarchar(max)" />
+          <Property Name="WeChatLink" Type="nvarchar" MaxLength="2100" />
+          <Property Name="ContentType" Type="int" Nullable="false" />
+          <Property Name="GatedContent" Type="nvarchar" MaxLength="50" />
+          <Property Name="HeadLine" Type="nvarchar" MaxLength="500" />
+          <Property Name="Outline" Type="nvarchar(max)" />
+          <Property Name="Link" Type="nvarchar" MaxLength="2100" />
+          <Property Name="MonthNO" Type="nvarchar" MaxLength="6" StoreGeneratedPattern="Computed" />
+          <Property Name="TextContent" Type="nvarchar(max)" />
+          <Property Name="AddUserID" Type="varchar" MaxLength="50" />
+          <Property Name="AddUSerName" Type="varchar" MaxLength="100" />
+          <Property Name="AddTime" Type="date" />
+          <Property Name="LastEditUserID" Type="varchar" MaxLength="50" />
+          <Property Name="LastEditUserName" Type="varchar" MaxLength="100" />
+          <Property Name="LastEditTime" Type="date" />
+          <Property Name="MoreClassifiers" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tContentHistory">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ContentID" Type="int" />
+          <Property Name="Date" Type="date" />
+          <Property Name="CNTitle" Type="nvarchar" MaxLength="500" />
+          <Property Name="ENTitle" Type="nvarchar" MaxLength="1000" />
+          <Property Name="KeySegment" Type="nvarchar" MaxLength="100" />
+          <Property Name="OtherSegment" Type="nvarchar" MaxLength="100" />
+          <Property Name="PurleyContent" Type="nvarchar" MaxLength="100" />
+          <Property Name="Resource" Type="nvarchar" MaxLength="100" />
+          <Property Name="Owner" Type="nvarchar" MaxLength="100" />
+          <Property Name="Audience" Type="nvarchar" MaxLength="100" />
+          <Property Name="Category" Type="nvarchar" MaxLength="100" />
+          <Property Name="Format" Type="nvarchar" MaxLength="100" />
+          <Property Name="Volume" Type="nvarchar" MaxLength="100" />
+          <Property Name="Agency" Type="nvarchar" MaxLength="100" />
+          <Property Name="Stage" Type="nvarchar" MaxLength="100" />
+          <Property Name="Summary" Type="nvarchar(max)" />
+          <Property Name="Industry" Type="nvarchar" MaxLength="100" />
+          <Property Name="IndustrialTopic" Type="nvarchar" MaxLength="100" />
+          <Property Name="TechnicalTopic" Type="nvarchar" MaxLength="100" />
+          <Property Name="Workload" Type="nvarchar" MaxLength="1000" />
+          <Property Name="Customer" Type="nvarchar" MaxLength="500" />
+          <Property Name="Partner" Type="nvarchar" MaxLength="100" />
+          <Property Name="HWProductTech" Type="nvarchar" MaxLength="1000" />
+          <Property Name="SWSolutionOrOtherSupport" Type="nvarchar" MaxLength="500" />
+          <Property Name="KeySentence" Type="nvarchar(max)" />
+          <Property Name="IntelHQWebsiteEN" Type="nvarchar" MaxLength="2100" />
+          <Property Name="IntelCNWebsite" Type="nvarchar" MaxLength="2100" />
+          <Property Name="AWSURLCN" Type="nvarchar" MaxLength="2100" />
+          <Property Name="IDLIDCN" Type="nvarchar" MaxLength="2100" />
+          <Property Name="Comments" Type="nvarchar(max)" />
+          <Property Name="Media" Type="nvarchar" MaxLength="500" />
+          <Property Name="MediaURLs" Type="nvarchar" MaxLength="2100" />
+          <Property Name="Abstract" Type="nvarchar(max)" />
+          <Property Name="WeChatLink" Type="nvarchar" MaxLength="2100" />
+          <Property Name="ContentType" Type="int" />
+          <Property Name="GatedContent" Type="nvarchar" MaxLength="50" />
+          <Property Name="HeadLine" Type="nvarchar" MaxLength="500" />
+          <Property Name="Outline" Type="nvarchar(max)" />
+          <Property Name="Link" Type="nvarchar" MaxLength="2100" />
+          <Property Name="TextContent" Type="nvarchar(max)" />
+          <Property Name="AddUserID" Type="varchar" MaxLength="50" />
+          <Property Name="AddUSerName" Type="varchar" MaxLength="100" />
+          <Property Name="AddTime" Type="date" />
+          <Property Name="LastEditUserID" Type="varchar" MaxLength="50" />
+          <Property Name="LastEditUserName" Type="varchar" MaxLength="100" />
+          <Property Name="LastEditTime" Type="date" />
+          <Property Name="ActionType" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="tContentImport">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Date" Type="datetime" Nullable="false" />
+          <Property Name="CNTitle" Type="nvarchar" MaxLength="500" />
+          <Property Name="ENTitle" Type="nvarchar" MaxLength="1000" />
+          <Property Name="KeySegment" Type="nvarchar" MaxLength="100" />
+          <Property Name="OtherSegment" Type="nvarchar" MaxLength="100" />
+          <Property Name="PurleyContent" Type="nvarchar" MaxLength="100" />
+          <Property Name="Resource" Type="nvarchar" MaxLength="100" />
+          <Property Name="Owner" Type="nvarchar" MaxLength="100" />
+          <Property Name="Audience" Type="nvarchar" MaxLength="100" />
+          <Property Name="Category" Type="nvarchar" MaxLength="100" />
+          <Property Name="Format" Type="nvarchar" MaxLength="100" />
+          <Property Name="Volume" Type="nvarchar" MaxLength="100" />
+          <Property Name="Agency" Type="nvarchar" MaxLength="100" />
+          <Property Name="Stage" Type="nvarchar" MaxLength="100" />
+          <Property Name="Summary" Type="nvarchar(max)" />
+          <Property Name="Industry" Type="nvarchar" MaxLength="100" />
+          <Property Name="IndustrialTopic" Type="nvarchar" MaxLength="100" />
+          <Property Name="TechnicalTopic" Type="nvarchar" MaxLength="100" />
+          <Property Name="Workload" Type="nvarchar" MaxLength="1000" />
+          <Property Name="Customer" Type="nvarchar" MaxLength="500" />
+          <Property Name="Partner" Type="nvarchar" MaxLength="100" />
+          <Property Name="HWProductTech" Type="nvarchar" MaxLength="1000" />
+          <Property Name="SWSolutionOrOtherSupport" Type="nvarchar" MaxLength="500" />
+          <Property Name="KeySentence" Type="nvarchar(max)" />
+          <Property Name="IntelHQWebsiteEN" Type="nvarchar" MaxLength="2100" />
+          <Property Name="IntelCNWebsite" Type="nvarchar" MaxLength="2100" />
+          <Property Name="AWSURLCN" Type="nvarchar" MaxLength="2100" />
+          <Property Name="IDLIDCN" Type="nvarchar" MaxLength="2100" />
+          <Property Name="Comments" Type="nvarchar(max)" />
+          <Property Name="Media" Type="nvarchar" MaxLength="500" />
+          <Property Name="MediaURLs" Type="nvarchar" MaxLength="2100" />
+          <Property Name="Abstract" Type="nvarchar(max)" />
+          <Property Name="WeChatLink" Type="nvarchar" MaxLength="2100" />
+          <Property Name="ContentType" Type="int" Nullable="false" />
+          <Property Name="GatedContent" Type="nvarchar" MaxLength="50" />
+          <Property Name="HeadLine" Type="nvarchar" MaxLength="500" />
+          <Property Name="Outline" Type="nvarchar(max)" />
+          <Property Name="Link" Type="nvarchar" MaxLength="2100" />
+          <Property Name="TextContent" Type="nvarchar(max)" />
+          <Property Name="AddUserID" Type="varchar" MaxLength="50" />
+          <Property Name="AddUSerName" Type="varchar" MaxLength="100" />
+          <Property Name="AddTime" Type="date" />
+          <Property Name="LastEditUserID" Type="varchar" MaxLength="50" />
+          <Property Name="LastEditUserName" Type="varchar" MaxLength="100" />
+          <Property Name="LastEditTime" Type="date" />
+          <Property Name="MoreClassifiers" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tLog">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="AddTime" Type="datetime" Nullable="false" />
+          <Property Name="AddUserID" Type="int" Nullable="false" />
+          <Property Name="AddUserName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Title" Type="nvarchar" MaxLength="200" Nullable="false" />
+          <Property Name="Description" Type="nvarchar(max)" Nullable="false" />
+          <Property Name="ClientInfo" Type="xml" Nullable="false" />
+          <Property Name="LogType" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tToken">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="UserID" Type="int" Nullable="false" />
+          <Property Name="SessionID" Type="varchar" MaxLength="50" Nullable="false" />
+          <Property Name="ExpireTime" Type="datetime" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tUser">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="LoginName" Type="varchar" MaxLength="50" />
+          <Property Name="Roles" Type="varchar" MaxLength="50" />
+          <Property Name="IsManager" Type="bit" />
+          <Property Name="PassWord" Type="varchar" MaxLength="200" />
+          <Property Name="AddUser" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <Association Name="FK_tCategoryItem_tCategory">
+          <End Role="tCategory" Type="Self.tCategory" Multiplicity="1" />
+          <End Role="tCategoryItem" Type="Self.tCategoryItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tCategory">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tCategoryItem">
+              <PropertyRef Name="CategoryID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tToken_tUser">
+          <End Role="tUser" Type="Self.tUser" Multiplicity="1" />
+          <End Role="tToken" Type="Self.tToken" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tUser">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tToken">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="IntelModelStoreContainer">
+          <EntitySet Name="tCategory" EntityType="Self.tCategory" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tCategoryItem" EntityType="Self.tCategoryItem" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tContent" EntityType="Self.tContent" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tContentHistory" EntityType="Self.tContentHistory" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tContentImport" EntityType="Self.tContentImport" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tLog" EntityType="Self.tLog" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tToken" EntityType="Self.tToken" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tUser" EntityType="Self.tUser" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_tCategoryItem_tCategory" Association="Self.FK_tCategoryItem_tCategory">
+            <End Role="tCategory" EntitySet="tCategory" />
+            <End Role="tCategoryItem" EntitySet="tCategoryItem" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tToken_tUser" Association="Self.FK_tToken_tUser">
+            <End Role="tUser" EntitySet="tUser" />
+            <End Role="tToken" EntitySet="tToken" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="IntelModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="tCategory">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ContentType" Type="Int32" Nullable="false" />
+          <Property Name="Code" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DisplayName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Sort" Type="Int32" Nullable="false" />
+          <Property Name="IsAdvanceSearch" Type="Boolean" Nullable="false" />
+          <Property Name="IsMultiple" Type="Boolean" Nullable="false" />
+          <Property Name="Position" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="tCategoryItems" Relationship="Self.FK_tCategoryItem_tCategory" FromRole="tCategory" ToRole="tCategoryItem" />
+        </EntityType>
+        <EntityType Name="tCategoryItem">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CategoryID" Type="Int32" Nullable="false" />
+          <Property Name="Code" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Sort" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="tCategory" Relationship="Self.FK_tCategoryItem_tCategory" FromRole="tCategoryItem" ToRole="tCategory" />
+        </EntityType>
+        <EntityType Name="tContent">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Date" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="CNTitle" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="ENTitle" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="KeySegment" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="OtherSegment" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="PurleyContent" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Resource" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Owner" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Audience" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Category" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Format" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Volume" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Agency" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Stage" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Summary" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Industry" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="IndustrialTopic" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="TechnicalTopic" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Workload" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="Customer" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Partner" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="HWProductTech" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="SWSolutionOrOtherSupport" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="KeySentence" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IntelHQWebsiteEN" Type="String" MaxLength="2100" FixedLength="false" Unicode="true" />
+          <Property Name="IntelCNWebsite" Type="String" MaxLength="2100" FixedLength="false" Unicode="true" />
+          <Property Name="AWSURLCN" Type="String" MaxLength="2100" FixedLength="false" Unicode="true" />
+          <Property Name="IDLIDCN" Type="String" MaxLength="2100" FixedLength="false" Unicode="true" />
+          <Property Name="Comments" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Media" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="MediaURLs" Type="String" MaxLength="2100" FixedLength="false" Unicode="true" />
+          <Property Name="Abstract" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="WeChatLink" Type="String" MaxLength="2100" FixedLength="false" Unicode="true" />
+          <Property Name="ContentType" Type="Int32" Nullable="false" />
+          <Property Name="GatedContent" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="HeadLine" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Outline" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Link" Type="String" MaxLength="2100" FixedLength="false" Unicode="true" />
+          <Property Name="MonthNO" Type="String" MaxLength="6" FixedLength="false" Unicode="true" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="TextContent" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AddUserID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="AddUSerName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="AddTime" Type="DateTime" Precision="0" />
+          <Property Name="LastEditUserID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="LastEditUserName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="LastEditTime" Type="DateTime" Precision="0" />
+          <Property Name="MoreClassifiers" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tContentHistory">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ContentID" Type="Int32" />
+          <Property Name="Date" Type="DateTime" Precision="0" />
+          <Property Name="CNTitle" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="ENTitle" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="KeySegment" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="OtherSegment" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="PurleyContent" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Resource" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Owner" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Audience" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Category" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Format" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Volume" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Agency" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Stage" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Summary" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Industry" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="IndustrialTopic" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="TechnicalTopic" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Workload" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="Customer" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Partner" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="HWProductTech" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="SWSolutionOrOtherSupport" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="KeySentence" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IntelHQWebsiteEN" Type="String" MaxLength="2100" FixedLength="false" Unicode="true" />
+          <Property Name="IntelCNWebsite" Type="String" MaxLength="2100" FixedLength="false" Unicode="true" />
+          <Property Name="AWSURLCN" Type="String" MaxLength="2100" FixedLength="false" Unicode="true" />
+          <Property Name="IDLIDCN" Type="String" MaxLength="2100" FixedLength="false" Unicode="true" />
+          <Property Name="Comments" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Media" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="MediaURLs" Type="String" MaxLength="2100" FixedLength="false" Unicode="true" />
+          <Property Name="Abstract" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="WeChatLink" Type="String" MaxLength="2100" FixedLength="false" Unicode="true" />
+          <Property Name="ContentType" Type="Int32" />
+          <Property Name="GatedContent" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="HeadLine" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Outline" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Link" Type="String" MaxLength="2100" FixedLength="false" Unicode="true" />
+          <Property Name="TextContent" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AddUserID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="AddUSerName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="AddTime" Type="DateTime" Precision="0" />
+          <Property Name="LastEditUserID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="LastEditUserName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="LastEditTime" Type="DateTime" Precision="0" />
+          <Property Name="ActionType" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityType Name="tContentImport">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="CNTitle" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="ENTitle" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="KeySegment" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="OtherSegment" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="PurleyContent" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Resource" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Owner" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Audience" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Category" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Format" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Volume" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Agency" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Stage" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Summary" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Industry" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="IndustrialTopic" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="TechnicalTopic" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Workload" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="Customer" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Partner" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="HWProductTech" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+          <Property Name="SWSolutionOrOtherSupport" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="KeySentence" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="IntelHQWebsiteEN" Type="String" MaxLength="2100" FixedLength="false" Unicode="true" />
+          <Property Name="IntelCNWebsite" Type="String" MaxLength="2100" FixedLength="false" Unicode="true" />
+          <Property Name="AWSURLCN" Type="String" MaxLength="2100" FixedLength="false" Unicode="true" />
+          <Property Name="IDLIDCN" Type="String" MaxLength="2100" FixedLength="false" Unicode="true" />
+          <Property Name="Comments" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Media" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="MediaURLs" Type="String" MaxLength="2100" FixedLength="false" Unicode="true" />
+          <Property Name="Abstract" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="WeChatLink" Type="String" MaxLength="2100" FixedLength="false" Unicode="true" />
+          <Property Name="ContentType" Type="Int32" Nullable="false" />
+          <Property Name="GatedContent" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="HeadLine" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+          <Property Name="Outline" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Link" Type="String" MaxLength="2100" FixedLength="false" Unicode="true" />
+          <Property Name="TextContent" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="AddUserID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="AddUSerName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="AddTime" Type="DateTime" Precision="0" />
+          <Property Name="LastEditUserID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="LastEditUserName" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+          <Property Name="LastEditTime" Type="DateTime" Precision="0" />
+          <Property Name="MoreClassifiers" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tLog">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="AddTime" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="AddUserID" Type="Int32" Nullable="false" />
+          <Property Name="AddUserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Title" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ClientInfo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="LogType" Type="Int32" Nullable="false" />
+        </EntityType>
+        <EntityType Name="tToken">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="UserID" Type="Int32" Nullable="false" />
+          <Property Name="SessionID" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ExpireTime" Type="DateTime" Nullable="false" Precision="3" />
+          <NavigationProperty Name="tUser" Relationship="Self.FK_tToken_tUser" FromRole="tToken" ToRole="tUser" />
+        </EntityType>
+        <EntityType Name="tUser">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="LoginName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Roles" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="IsManager" Type="Boolean" />
+          <Property Name="PassWord" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+          <Property Name="AddUser" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="tTokens" Relationship="Self.FK_tToken_tUser" FromRole="tUser" ToRole="tToken" />
+        </EntityType>
+        <Association Name="FK_tCategoryItem_tCategory">
+          <End Role="tCategory" Type="Self.tCategory" Multiplicity="1" />
+          <End Role="tCategoryItem" Type="Self.tCategoryItem" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tCategory">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tCategoryItem">
+              <PropertyRef Name="CategoryID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tToken_tUser">
+          <End Role="tUser" Type="Self.tUser" Multiplicity="1" />
+          <End Role="tToken" Type="Self.tToken" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tUser">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="tToken">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="IntelEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="tCategories" EntityType="Self.tCategory" />
+          <EntitySet Name="tCategoryItems" EntityType="Self.tCategoryItem" />
+          <EntitySet Name="tContents" EntityType="Self.tContent" />
+          <EntitySet Name="tContentHistories" EntityType="Self.tContentHistory" />
+          <EntitySet Name="tContentImports" EntityType="Self.tContentImport" />
+          <EntitySet Name="tLogs" EntityType="Self.tLog" />
+          <EntitySet Name="tTokens" EntityType="Self.tToken" />
+          <EntitySet Name="tUsers" EntityType="Self.tUser" />
+          <AssociationSet Name="FK_tCategoryItem_tCategory" Association="Self.FK_tCategoryItem_tCategory">
+            <End Role="tCategory" EntitySet="tCategories" />
+            <End Role="tCategoryItem" EntitySet="tCategoryItems" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tToken_tUser" Association="Self.FK_tToken_tUser">
+            <End Role="tUser" EntitySet="tUsers" />
+            <End Role="tToken" EntitySet="tTokens" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="IntelModelStoreContainer" CdmEntityContainer="IntelEntities">
+          <EntitySetMapping Name="tCategories">
+            <EntityTypeMapping TypeName="IntelModel.tCategory">
+              <MappingFragment StoreEntitySet="tCategory">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="ContentType" ColumnName="ContentType" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+                <ScalarProperty Name="Sort" ColumnName="Sort" />
+                <ScalarProperty Name="IsAdvanceSearch" ColumnName="IsAdvanceSearch" />
+                <ScalarProperty Name="IsMultiple" ColumnName="IsMultiple" />
+                <ScalarProperty Name="Position" ColumnName="Position" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tCategoryItems">
+            <EntityTypeMapping TypeName="IntelModel.tCategoryItem">
+              <MappingFragment StoreEntitySet="tCategoryItem">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="CategoryID" ColumnName="CategoryID" />
+                <ScalarProperty Name="Code" ColumnName="Code" />
+                <ScalarProperty Name="Sort" ColumnName="Sort" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tContents">
+            <EntityTypeMapping TypeName="IntelModel.tContent">
+              <MappingFragment StoreEntitySet="tContent">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="CNTitle" ColumnName="CNTitle" />
+                <ScalarProperty Name="ENTitle" ColumnName="ENTitle" />
+                <ScalarProperty Name="KeySegment" ColumnName="KeySegment" />
+                <ScalarProperty Name="OtherSegment" ColumnName="OtherSegment" />
+                <ScalarProperty Name="PurleyContent" ColumnName="PurleyContent" />
+                <ScalarProperty Name="Resource" ColumnName="Resource" />
+                <ScalarProperty Name="Owner" ColumnName="Owner" />
+                <ScalarProperty Name="Audience" ColumnName="Audience" />
+                <ScalarProperty Name="Category" ColumnName="Category" />
+                <ScalarProperty Name="Format" ColumnName="Format" />
+                <ScalarProperty Name="Volume" ColumnName="Volume" />
+                <ScalarProperty Name="Agency" ColumnName="Agency" />
+                <ScalarProperty Name="Stage" ColumnName="Stage" />
+                <ScalarProperty Name="Summary" ColumnName="Summary" />
+                <ScalarProperty Name="Industry" ColumnName="Industry" />
+                <ScalarProperty Name="IndustrialTopic" ColumnName="IndustrialTopic" />
+                <ScalarProperty Name="TechnicalTopic" ColumnName="TechnicalTopic" />
+                <ScalarProperty Name="Workload" ColumnName="Workload" />
+                <ScalarProperty Name="Customer" ColumnName="Customer" />
+                <ScalarProperty Name="Partner" ColumnName="Partner" />
+                <ScalarProperty Name="HWProductTech" ColumnName="HWProductTech" />
+                <ScalarProperty Name="SWSolutionOrOtherSupport" ColumnName="SWSolutionOrOtherSupport" />
+                <ScalarProperty Name="KeySentence" ColumnName="KeySentence" />
+                <ScalarProperty Name="IntelHQWebsiteEN" ColumnName="IntelHQWebsiteEN" />
+                <ScalarProperty Name="IntelCNWebsite" ColumnName="IntelCNWebsite" />
+                <ScalarProperty Name="AWSURLCN" ColumnName="AWSURLCN" />
+                <ScalarProperty Name="IDLIDCN" ColumnName="IDLIDCN" />
+                <ScalarProperty Name="Comments" ColumnName="Comments" />
+                <ScalarProperty Name="Media" ColumnName="Media" />
+                <ScalarProperty Name="MediaURLs" ColumnName="MediaURLs" />
+                <ScalarProperty Name="Abstract" ColumnName="Abstract" />
+                <ScalarProperty Name="WeChatLink" ColumnName="WeChatLink" />
+                <ScalarProperty Name="ContentType" ColumnName="ContentType" />
+                <ScalarProperty Name="GatedContent" ColumnName="GatedContent" />
+                <ScalarProperty Name="HeadLine" ColumnName="HeadLine" />
+                <ScalarProperty Name="Outline" ColumnName="Outline" />
+                <ScalarProperty Name="Link" ColumnName="Link" />
+                <ScalarProperty Name="MonthNO" ColumnName="MonthNO" />
+                <ScalarProperty Name="TextContent" ColumnName="TextContent" />
+                <ScalarProperty Name="AddUserID" ColumnName="AddUserID" />
+                <ScalarProperty Name="AddUSerName" ColumnName="AddUSerName" />
+                <ScalarProperty Name="AddTime" ColumnName="AddTime" />
+                <ScalarProperty Name="LastEditUserID" ColumnName="LastEditUserID" />
+                <ScalarProperty Name="LastEditUserName" ColumnName="LastEditUserName" />
+                <ScalarProperty Name="LastEditTime" ColumnName="LastEditTime" />
+                <ScalarProperty Name="MoreClassifiers" ColumnName="MoreClassifiers" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tContentHistories">
+            <EntityTypeMapping TypeName="IntelModel.tContentHistory">
+              <MappingFragment StoreEntitySet="tContentHistory">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="ContentID" ColumnName="ContentID" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="CNTitle" ColumnName="CNTitle" />
+                <ScalarProperty Name="ENTitle" ColumnName="ENTitle" />
+                <ScalarProperty Name="KeySegment" ColumnName="KeySegment" />
+                <ScalarProperty Name="OtherSegment" ColumnName="OtherSegment" />
+                <ScalarProperty Name="PurleyContent" ColumnName="PurleyContent" />
+                <ScalarProperty Name="Resource" ColumnName="Resource" />
+                <ScalarProperty Name="Owner" ColumnName="Owner" />
+                <ScalarProperty Name="Audience" ColumnName="Audience" />
+                <ScalarProperty Name="Category" ColumnName="Category" />
+                <ScalarProperty Name="Format" ColumnName="Format" />
+                <ScalarProperty Name="Volume" ColumnName="Volume" />
+                <ScalarProperty Name="Agency" ColumnName="Agency" />
+                <ScalarProperty Name="Stage" ColumnName="Stage" />
+                <ScalarProperty Name="Summary" ColumnName="Summary" />
+                <ScalarProperty Name="Industry" ColumnName="Industry" />
+                <ScalarProperty Name="IndustrialTopic" ColumnName="IndustrialTopic" />
+                <ScalarProperty Name="TechnicalTopic" ColumnName="TechnicalTopic" />
+                <ScalarProperty Name="Workload" ColumnName="Workload" />
+                <ScalarProperty Name="Customer" ColumnName="Customer" />
+                <ScalarProperty Name="Partner" ColumnName="Partner" />
+                <ScalarProperty Name="HWProductTech" ColumnName="HWProductTech" />
+                <ScalarProperty Name="SWSolutionOrOtherSupport" ColumnName="SWSolutionOrOtherSupport" />
+                <ScalarProperty Name="KeySentence" ColumnName="KeySentence" />
+                <ScalarProperty Name="IntelHQWebsiteEN" ColumnName="IntelHQWebsiteEN" />
+                <ScalarProperty Name="IntelCNWebsite" ColumnName="IntelCNWebsite" />
+                <ScalarProperty Name="AWSURLCN" ColumnName="AWSURLCN" />
+                <ScalarProperty Name="IDLIDCN" ColumnName="IDLIDCN" />
+                <ScalarProperty Name="Comments" ColumnName="Comments" />
+                <ScalarProperty Name="Media" ColumnName="Media" />
+                <ScalarProperty Name="MediaURLs" ColumnName="MediaURLs" />
+                <ScalarProperty Name="Abstract" ColumnName="Abstract" />
+                <ScalarProperty Name="WeChatLink" ColumnName="WeChatLink" />
+                <ScalarProperty Name="ContentType" ColumnName="ContentType" />
+                <ScalarProperty Name="GatedContent" ColumnName="GatedContent" />
+                <ScalarProperty Name="HeadLine" ColumnName="HeadLine" />
+                <ScalarProperty Name="Outline" ColumnName="Outline" />
+                <ScalarProperty Name="Link" ColumnName="Link" />
+                <ScalarProperty Name="TextContent" ColumnName="TextContent" />
+                <ScalarProperty Name="AddUserID" ColumnName="AddUserID" />
+                <ScalarProperty Name="AddUSerName" ColumnName="AddUSerName" />
+                <ScalarProperty Name="AddTime" ColumnName="AddTime" />
+                <ScalarProperty Name="LastEditUserID" ColumnName="LastEditUserID" />
+                <ScalarProperty Name="LastEditUserName" ColumnName="LastEditUserName" />
+                <ScalarProperty Name="LastEditTime" ColumnName="LastEditTime" />
+                <ScalarProperty Name="ActionType" ColumnName="ActionType" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tContentImports">
+            <EntityTypeMapping TypeName="IntelModel.tContentImport">
+              <MappingFragment StoreEntitySet="tContentImport">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="CNTitle" ColumnName="CNTitle" />
+                <ScalarProperty Name="ENTitle" ColumnName="ENTitle" />
+                <ScalarProperty Name="KeySegment" ColumnName="KeySegment" />
+                <ScalarProperty Name="OtherSegment" ColumnName="OtherSegment" />
+                <ScalarProperty Name="PurleyContent" ColumnName="PurleyContent" />
+                <ScalarProperty Name="Resource" ColumnName="Resource" />
+                <ScalarProperty Name="Owner" ColumnName="Owner" />
+                <ScalarProperty Name="Audience" ColumnName="Audience" />
+                <ScalarProperty Name="Category" ColumnName="Category" />
+                <ScalarProperty Name="Format" ColumnName="Format" />
+                <ScalarProperty Name="Volume" ColumnName="Volume" />
+                <ScalarProperty Name="Agency" ColumnName="Agency" />
+                <ScalarProperty Name="Stage" ColumnName="Stage" />
+                <ScalarProperty Name="Summary" ColumnName="Summary" />
+                <ScalarProperty Name="Industry" ColumnName="Industry" />
+                <ScalarProperty Name="IndustrialTopic" ColumnName="IndustrialTopic" />
+                <ScalarProperty Name="TechnicalTopic" ColumnName="TechnicalTopic" />
+                <ScalarProperty Name="Workload" ColumnName="Workload" />
+                <ScalarProperty Name="Customer" ColumnName="Customer" />
+                <ScalarProperty Name="Partner" ColumnName="Partner" />
+                <ScalarProperty Name="HWProductTech" ColumnName="HWProductTech" />
+                <ScalarProperty Name="SWSolutionOrOtherSupport" ColumnName="SWSolutionOrOtherSupport" />
+                <ScalarProperty Name="KeySentence" ColumnName="KeySentence" />
+                <ScalarProperty Name="IntelHQWebsiteEN" ColumnName="IntelHQWebsiteEN" />
+                <ScalarProperty Name="IntelCNWebsite" ColumnName="IntelCNWebsite" />
+                <ScalarProperty Name="AWSURLCN" ColumnName="AWSURLCN" />
+                <ScalarProperty Name="IDLIDCN" ColumnName="IDLIDCN" />
+                <ScalarProperty Name="Comments" ColumnName="Comments" />
+                <ScalarProperty Name="Media" ColumnName="Media" />
+                <ScalarProperty Name="MediaURLs" ColumnName="MediaURLs" />
+                <ScalarProperty Name="Abstract" ColumnName="Abstract" />
+                <ScalarProperty Name="WeChatLink" ColumnName="WeChatLink" />
+                <ScalarProperty Name="ContentType" ColumnName="ContentType" />
+                <ScalarProperty Name="GatedContent" ColumnName="GatedContent" />
+                <ScalarProperty Name="HeadLine" ColumnName="HeadLine" />
+                <ScalarProperty Name="Outline" ColumnName="Outline" />
+                <ScalarProperty Name="Link" ColumnName="Link" />
+                <ScalarProperty Name="TextContent" ColumnName="TextContent" />
+                <ScalarProperty Name="AddUserID" ColumnName="AddUserID" />
+                <ScalarProperty Name="AddUSerName" ColumnName="AddUSerName" />
+                <ScalarProperty Name="AddTime" ColumnName="AddTime" />
+                <ScalarProperty Name="LastEditUserID" ColumnName="LastEditUserID" />
+                <ScalarProperty Name="LastEditUserName" ColumnName="LastEditUserName" />
+                <ScalarProperty Name="LastEditTime" ColumnName="LastEditTime" />
+                <ScalarProperty Name="MoreClassifiers" ColumnName="MoreClassifiers" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tLogs">
+            <EntityTypeMapping TypeName="IntelModel.tLog">
+              <MappingFragment StoreEntitySet="tLog">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="AddTime" ColumnName="AddTime" />
+                <ScalarProperty Name="AddUserID" ColumnName="AddUserID" />
+                <ScalarProperty Name="AddUserName" ColumnName="AddUserName" />
+                <ScalarProperty Name="Title" ColumnName="Title" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+                <ScalarProperty Name="ClientInfo" ColumnName="ClientInfo" />
+                <ScalarProperty Name="LogType" ColumnName="LogType" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tTokens">
+            <EntityTypeMapping TypeName="IntelModel.tToken">
+              <MappingFragment StoreEntitySet="tToken">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="UserID" ColumnName="UserID" />
+                <ScalarProperty Name="SessionID" ColumnName="SessionID" />
+                <ScalarProperty Name="ExpireTime" ColumnName="ExpireTime" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tUsers">
+            <EntityTypeMapping TypeName="IntelModel.tUser">
+              <MappingFragment StoreEntitySet="tUser">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="LoginName" ColumnName="LoginName" />
+                <ScalarProperty Name="Roles" ColumnName="Roles" />
+                <ScalarProperty Name="IsManager" ColumnName="IsManager" />
+                <ScalarProperty Name="PassWord" ColumnName="PassWord" />
+                <ScalarProperty Name="AddUser" ColumnName="AddUser" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="无" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
